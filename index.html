@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Amigos Solidarios del provincia</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link rel="shortcut icon" href="imagenes/logo1.png">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .imagenfondo{
+
+        width: 100%;
+        height: auto;
+
+      }
+
+      .fondonav{
+        width: 150px;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <!-- <img src="imagenes/logo1.png" alt="">
+  <img src="imagenes/fondonav2.png" alt="" class="fondonav"> -->
+
+ 
+  
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#n2" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Galeria</strong>
+     </a>
+
+     <a href="#n3" class="navbar-brand d-flex align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+      </svg>
+      <strong>Sumate!</strong>
+      </a>
+
+      <a href="#n1" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+        <strong>Nuestra historia</strong>
+        </a>
+
+
+      <a href="#n4" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+            <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+          </svg>
+          <strong>Donaciones</strong>
+      </a>
+
+
+     </div>
+    </div>
+      
+</header>
+
+<main>
+
+
+<style>
+
+.carousel-indicator{
+
+    width: 30px;
+
+}
+  
+
+
+
+
+
+
+
+</style>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/fotobrujojuanma.jpg" class="d-block w-60" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/fotogrupal1.png" class="d-block w-60" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/cbudata.png" class="d-block w-60" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  
+
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        
+        <div class="col">
+          
+              <div class="card-body">
+                <img src="imagenes/potada1.png" alt="">
+                <br>
+                <br>
+              <p class="card-text">Primera edicion, comienzos y nuestros Proyectos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                
+              </div>
+            </div>
+          
+        </div>
+        <div class="col">
+          
+            <div class="card-body">
+                <a href="revistas/Solidiario Mayo.pdf" target="new"><img src="imagenes/portada2.png" alt=""></a>
+              <br>
+              <br>
+            <p class="card-text">Segunda edicion, Nuevo desafios</p>
+            <div class="d-flex justify-content-between align-items-center">
+              
+              
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="col">
+          
+        <div class="card-body">
+          <a href="revistas/Amigos Solidiarios 3era edición.pdf" target="new"><img src="imagenes/portada3.png" alt=""></a>
+          <br>
+          <br>
+          
+        <p class="card-text">Tercera edicion, El aula digital</p>
+        <div class="d-flex justify-content-between align-items-center">
+          
+        
+        </div>
+      </div>
+    
+  </div>
+  
+  
+  
+  
+
+  <div class="col">
+          
+    <div class="card-body">
+      
+      <a id="n1"></a><h1>Nuestra historia</h1>
+
+      <hr>
+
+      <p>Amigos Solidarios del Provincia Somos un grupo de personas vinculadas al Banco de la Provincia de
+        Buenos Aires, principalmente empleados y jubilados, aunque también hay participantes que no
+        pertenecen a la institución pero que, movilizados por una clara vocacional social, ven en nuestras
+        acciones una oportunidad para ayudar a transformar la realidad. especialmente de los niños y
+        familias más vulnerables de la Provincia de Buenos Aires.</p>
+    
+   
+      <p>Mes a mes reunimos donaciones que salen principalmente de nuestro propio bolsillo, mediante las
+        cuales concretamos los objetivos que nos proponemos. Trabajamos en forma directamente
+        articulada con directores y autoridades de diferentes escuelas públicas de la Provincia de Buenos
+        Aires, para llegar hasta las familias. Solemos interactuar de esta forma, incluso cuando hemos
+        ayudado a “ollas populares” que nos lo han requerido.</p>
+
+
+        <p>Nacimos a principios del 2020 en un contexto de crisis socioeconómica, agravado por el comienzo
+          de una Pandemia Global. Nuestras acciones en un principio estuvieron orientadas a fomentar
+          espacios de intercambio y cohesión familiar, mediante la entrega de alimentos de primera calidad
+          en Escuelas públicas del Conurbano. </p>
+
+          <p>En menos de un año, logramos efectuar 12 gestas solidarias y reunimos más de $1.400.000, que se
+            transformaron en cuatro mil Meriendas (8 mil Litros de Leche, 4 mil Kilos de Azúcar, 4 mil
+            paquetes de yerba, 4 mil paquetes de vainillas, 4000 paquetes de cacao instantáneo, 12 mil
+            alfajores y 4 mil bolsas con golosinas) y muchos alimentos más para los comedores.</p>
+        
+
+          
+    
+    </div>
+    
+  </div>
+
+
+  <div class="col">
+          
+    <div class="card-body">
+      
+
+      <br>
+      <br>
+      <br>
+      
+      
+      <p>Gracias a estas acciones, logramos ayudar a más de 16.000 personas en estas escuelas:
+        - Escuela N° 31 "CALIXTO GAUNA" Rafael Castillo 438, El Palomar, Provincia de Buenos
+        Aires.
+        - Escuela N°67 “Esteban Echeverria”. Int. Villegas 1199, El
+        Palomar, Provincia de Buenos Aires.
+        - Escuela Primaria N°81 “Albert Schweitzer”. Entre Ríos 2812,
+        Quilmes Oeste, Provincia de Buenos Aires.
+        - Escuela Técnica Secundaria N°5 “2 de Abril”. Cnel. Pringles 27,
+        Temperley, Provincia de Buenos Aires.
+        - Comedor Comunitario “Olla Solidaria la Esperanza”.</p>
+
+
+        <p>Comedor Comunitario “Olla Solidaria la Cuadra”. Barrio Zarza, Moreno, Provincia de Buenos
+          Aires.
+          - Escuela Primaria “San Martín de Porres”. Rubén Darío 1260, José León Suárez, Provincia de
+          Buenos.
+          - Jardín de Infantes “San Martín de Porres”. Rubén Darío 1260, José León Suárez, Provincia
+          de Buenos.
+          - Centro Educativo Comunitario “Santa María de los Ángeles”. Manuel Láinez 2240, Boulogne, </p>
+
+
+          <p>Escuela Secundaría N°63. Calle 461 B, Calle 15 A, City Bell, Provincia de Buenos Aires.
+            - Escuela Primaría N°34. Calle 461 B, Calle 15 A, City Bell, Provincia de Buenos Aires.
+            - Escuela Primaria N°57 “Brigadier Alberto Sola Clarey”. Sta. Teresa 2098, Morón, Provincia
+            de Buenos Aires.
+            - Escuela de Educación Secundaria N°8. Yatay 500, Temperley, Provincia de Buenos Aires</p>
+
+          
+    
+    </div>
+    
+  </div>
+  
+
+  <div class="col">
+          
+    <div class="card-body">
+      
+
+      <br>
+      <br>
+      <br>
+      
+      
+      <p>Culminamos el año agasajando en nuestra casa a los principales protagonistas bajo un estricto
+        protocolo de cuidado. En un contexto particular, celebramos y reconocimos a cada comunidad las
+        cuales fueron representadas por sus directivos, representantes de cooperadoras y referentes.
+        quienes con una vocación inclaudicable acompañan, apoyan y contienen a nuestros chicos y
+        también a las familias que tanto lo necesitan. Es por ello, que junto a nuestro querido “Banco
+        Provincia” entregamos banderas de ceremonia de la Provincia de Buenos Aires, revindicando el
+        valor que representa la bandera bonaerense, la cual es portada por los mejores compañeros en
+        este caso una bandera que nos unirá por siempre con cada institución.</p>
+
+        
+        
+          
+    
+    </div>
+  
+  </div>
+  
+
+  
+   <!-- SUMATE -->
+
+   <div class="col">
+         <hr> 
+    <div class="card-body">
+      
+      
+      <img src="imagenes/fondosumate.png" alt="">
+
+    </div>
+    
+  </div>
+  <div class="col">
+          <hr>
+    <div class="card-body">
+      
+      
+      <a id="n3"></a><h1>+Sumate</h1>
+      <h5>Se parte de amigos solidarios y parcitipa activamente por un futuro mejor! </h5>
+
+    </div>
+    
+  </div>
+
+  <!-- SUMATE -->
+  <div class="col">
+          <hr>
+    <div class="card-body">
+      
+      <form action="php/enviar.php" method="POST">
+            
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Su informacion no sera divulgada</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputname" class="form-label">Nombre y Apellido</label>
+          <input type="text" class="form-control" id="exampleInputname">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputtel" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="exampleInputtel">
+        </div>
+        <button type="submit" class="btn btn-primary">Me sumo!</button>
+    </form>
+
+        
+        
+          
+    
+    </div>
+    
+  </div>
+
+  
+        
+        
+    </div>
+    
+  </div>
+</div>
+<!--CSS PARA LA GALERIA-->
+<style>
+  .containerg{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+</style>
+
+
+<div class="containerg">
+  <a id="n2"></a><h1>Galeria</h1>
+  <ul class="slider">
+    <li id="slide1">
+      <img src="imagenes/fotobrujo1.png"/>
+    </li>
+    <li id="slide2">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg"/>
+    </li>
+    <li id="slide3">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KA2awzsUkME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+  </ul>
+  
+  <ul class="menu">
+    <li>
+      <a href="#slide1"></a>
+    </li>
+    <li>
+      <a href="#slide2"></a>
+    </li>
+     <li>
+      <a href="#slide3"></a>
+    </li>
+  </ul>
+  
+</div>
+
+
+<div class="containerg">
+  <a id="n4"></a><h1>Donaciones</h1>
+    <img src="imagenes/cbudata.png" alt="">
+
+</div>
+
+
+  <hr>
+
+
+  <div class="card-body">
+    <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+    <ul class="list-unstyled mt-3 mb-4">
+      <li>10 users included</li>
+      <li>2 GB of storage</li>
+      <li>Email support</li>
+      <li>Help center access</li>
+    </ul>
+    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg>
+    <p class="float-end mb-1">
+      <a href="#">Volver al Inicio</a>
+    </p>
+    <p class="mb-1">Pagina oficial de Amigos Solidarios del Provincia &copy;</p>
+    <p class="mb-1">Lk2 Soft &copy;</p>
+    
+  </div>
+</footer>
+
+
+    
+
+      
+  </body>
+</html>
